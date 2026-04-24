@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoopEnergie — Financement collectif de l'énergie solaire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Sun rays -->
+            <circle cx="16" cy="11" r="5" fill="#F5A623"/>
+            <line x1="16" y1="3" x2="16" y2="1" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+            <line x1="16" y1="21" x2="16" y2="19" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+            <line x1="8" y1="11" x2="6" y2="11" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+            <line x1="26" y1="11" x2="24" y2="11" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+            <line x1="10.34" y1="5.34" x2="8.93" y2="3.93" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+            <line x1="23.07" y1="18.07" x2="21.66" y2="16.66" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+            <line x1="21.66" y1="5.34" x2="23.07" y2="3.93" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+            <line x1="8.93" y1="18.07" x2="10.34" y2="16.66" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+            <!-- Solar panel -->
+            <rect x="6" y="21" width="20" height="9" rx="1.5" fill="#1A6B3C"/>
+            <line x1="6" y1="24.5" x2="26" y2="24.5" stroke="#4CAF7D" stroke-width="0.8"/>
+            <line x1="6" y1="27.5" x2="26" y2="27.5" stroke="#4CAF7D" stroke-width="0.8"/>
+            <line x1="12.67" y1="21" x2="12.67" y2="30" stroke="#4CAF7D" stroke-width="0.8"/>
+            <line x1="19.33" y1="21" x2="19.33" y2="30" stroke="#4CAF7D" stroke-width="0.8"/>
+          </svg>
+        </span>
+        <span class="logo-text">Coop<span>Energie</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+        <li><a href="#comment-ca-marche">Comment ça marche</a></li>
+        <li><a href="#acteurs">Acteurs</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-ghost">Se connecter</a>
+        <a href="#" class="btn btn-primary">Démarrer</a>
+      </div>
+      <button class="nav-burger" id="navBurger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#fonctionnalites">Fonctionnalités</a>
+      <a href="#comment-ca-marche">Comment ça marche</a>
+      <a href="#acteurs">Acteurs</a>
+      <a href="#faq">FAQ</a>
+      <a href="#" class="btn btn-primary" style="text-align:center;margin-top:8px">Démarrer gratuitement</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Blockchain · Mobile Money · Énergie Solaire
+      </div>
+      <h1 class="hero-title">
+        Cotisez ensemble.<br/>
+        <em>Éclairez</em> votre communauté.
+      </h1>
+      <p class="hero-desc">
+        CoopEnergie est la plateforme de financement collectif qui permet aux coopératives, ONG et mairies de gérer leurs cotisations, voter leurs décisions et financer des projets d'électrification solaire — en toute transparence, grâce à la blockchain.
+      </p>
+      <div class="hero-cta">
+        <a href="#" class="btn btn-primary btn-lg">Créer ma coopérative</a>
+        <a href="#comment-ca-marche" class="btn btn-outline btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16"/></svg>
+          Voir comment ça marche
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Modes de financement</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Transparent sur la blockchain</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Intermédiaire humain requis</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Découvrir</span>
+      <div class="scroll-arrow">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section features" id="fonctionnalites">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Fonctionnalités</span>
+        <h2 class="section-title">Tout ce qu'il vous faut<br/>pour réussir votre projet solaire</h2>
+        <p class="section-desc">Une plateforme pensée pour les réalités africaines — Mobile Money, gouvernance collective et traçabilité blockchain.</p>
+      </div>
+      <div class="features-grid">
+
+        <div class="feat-card feat-card--accent">
+          <div class="feat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          </div>
+          <h3>Gestion des cotisations</h3>
+          <p>Collectez les cotisations via MTN Mobile Money, Orange Money et d'autres services financiers. Suivez en temps réel les contributions individuelles et l'atteinte de vos objectifs financiers.</p>
+          <div class="feat-tag">MTN MoMo · Orange Money</div>
+        </div>
+
+        <div class="feat-card">
+          <div class="feat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Gouvernance par le vote</h3>
+          <p>Prenez vos décisions collectivement : choix des équipements, sélection du prestataire, acceptation de financements externes. Chaque vote est enregistré sur la blockchain — incontestable et immuable.</p>
+        </div>
+
+        <div class="feat-card">
+          <div class="feat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3>Smart contracts automatiques</h3>
+          <p>Les fonds sont détenus et libérés automatiquement par un contrat intelligent. Le prestataire est payé dès validation des étapes — sans intermédiaire humain, sans risque de détournement.</p>
+          <div class="feat-tag">Blockchain Celo</div>
+        </div>
+
+        <div class="feat-card">
+          <div class="feat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Mise en relation & marketplace</h3>
+          <p>Rendez votre projet visible pour attirer des financements. Publiez des appels à prestataires, répondez à des appels d'offres et créez un écosystème collaboratif autour de l'énergie solaire.</p>
+        </div>
+
+        <div class="feat-card">
+          <div class="feat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>Rapports financiers automatiques</h3>
+          <p>Générez automatiquement des rapports financiers complets et des plans d'achat à partir des données stockées sur la blockchain. Une source de vérité unique, accessible à tous les membres.</p>
+        </div>
+
+        <div class="feat-card feat-card--solar">
+          <div class="feat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Suivi de projet en temps réel</h3>
+          <p>Suivez chaque étape de l'installation solaire, des premières cotisations jusqu'à la mise en service. Les validations de livraison débloquent automatiquement les paiements par tranches.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section how-it-works" id="comment-ca-marche">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Processus</span>
+        <h2 class="section-title">Comment ça marche ?</h2>
+        <p class="section-desc">De la création de votre coopérative au paiement automatique du prestataire — un processus simple et sécurisé.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Créez votre coopérative</h3>
+            <p>Inscrivez-vous, créez votre groupe et invitez vos membres. Définissez votre objectif financier et commencez à collecter les cotisations via Mobile Money.</p>
+          </div>
+          <div class="step-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+          </div>
+        </div>
+        <div class="step-connector"><div class="step-line"></div></div>
+
+        <div class="step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Cotisez & attirez des financements</h3>
+            <p>Les membres cotisent via MTN MoMo ou Orange Money. Rendez votre projet visible pour attirer ONG et mairies. Acceptez ou refusez les financements par vote collectif.</p>
+          </div>
+          <div class="step-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          </div>
+        </div>
+        <div class="step-connector"><div class="step-line"></div></div>
+
+        <div class="step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Votez vos décisions</h3>
+            <p>Choisissez collectivement votre prestataire et validez le lancement du projet. Le smart contract bloque les fonds de manière sécurisée dès que le quorum est atteint.</p>
+          </div>
+          <div class="step-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+        </div>
+        <div class="step-connector"><div class="step-line"></div></div>
+
+        <div class="step">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Paiement automatique & transparence</h3>
+            <p>Le prestataire est payé automatiquement à chaque étape validée. Tous les membres reçoivent un rapport financier généré depuis la blockchain — vérifiable et inaltérable.</p>
+          </div>
+          <div class="step-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODES FINANCEMENT -->
+  <section class="section modes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Flexibilité</span>
+        <h2 class="section-title">3 modes de financement adaptés<br/>à votre contexte</h2>
+      </div>
+      <div class="modes-grid">
+        <div class="mode-card">
+          <div class="mode-number">01</div>
+          <div class="mode-badge mode-badge--green">Coopérative autonome</div>
+          <p>Votre groupe cotise seul. Le smart contract gère les fonds et paie le prestataire automatiquement après validation collective.</p>
+          <div class="mode-flow">
+            <span>Cotisations</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <span>Smart contract</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <span>Prestataire</span>
+          </div>
+        </div>
+        <div class="mode-card mode-card--featured">
+          <div class="mode-number">02</div>
+          <div class="mode-badge mode-badge--solar">Coopérative + financement externe</div>
+          <p>ONG ou mairie propose un financement. La coopérative vote pour accepter ou refuser. Les fonds sont consolidés dans le smart contract et libérés progressivement.</p>
+          <div class="mode-flow">
+            <span>Cotisations + ONG/Mairie</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <span>Vote d'acceptation</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <span>Prestataire</span>
+          </div>
+        </div>
+        <div class="mode-card">
+          <div class="mode-number">03</div>
+          <div class="mode-badge mode-badge--green">ONG / Mairie en direct</div>
+          <p>L'institution finance directement un projet et interagit avec le prestataire. Le smart contract valide et débloque les fonds par tranches selon l'avancement des travaux.</p>
+          <div class="mode-flow">
+            <span>Institution</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <span>Étapes de livraison</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <span>Prestataire</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTEURS -->
+  <section class="section actors" id="acteurs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Écosystème</span>
+        <h2 class="section-title">Une plateforme pour tous les acteurs<br/>de l'électrification communautaire</h2>
+      </div>
+      <div class="actors-grid">
+        <div class="actor-card">
+          <div class="actor-icon actor-icon--coop">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Coopératives & Associations</h3>
+          <ul>
+            <li>Créer et gérer un groupe en ligne</li>
+            <li>Collecter les cotisations via Mobile Money</li>
+            <li>Voter collectivement sur toutes les décisions</li>
+            <li>Contrôle total sur le projet et les fonds</li>
+          </ul>
+        </div>
+        <div class="actor-card">
+          <div class="actor-icon actor-icon--ngo">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>ONG</h3>
+          <ul>
+            <li>Consulter les projets visibles sur la plateforme</li>
+            <li>Proposer des subventions ciblées</li>
+            <li>Suivre l'impact de leurs financements en temps réel</li>
+            <li>Lancer des appels à prestataires certifiés</li>
+          </ul>
+        </div>
+        <div class="actor-card">
+          <div class="actor-icon actor-icon--city">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3>Mairies</h3>
+          <ul>
+            <li>Financer des projets communautaires</li>
+            <li>Contracter directement avec des prestataires</li>
+            <li>Suivre l'exécution et valider les étapes</li>
+            <li>Déblocage des fonds conditionné à l'avancement</li>
+          </ul>
+        </div>
+        <div class="actor-card">
+          <div class="actor-icon actor-icon--provider">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Prestataires Solaires</h3>
+          <ul>
+            <li>S'inscrire et publier leurs offres</li>
+            <li>Répondre à des appels d'offres qualifiés</li>
+            <li>Paiement automatique et garanti par smart contract</li>
+            <li>Badge de confiance et historique de performance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOCKCHAIN TRUST -->
+  <section class="section blockchain-trust">
+    <div class="container">
+      <div class="trust-inner">
+        <div class="trust-text">
+          <span class="section-tag">Technologie</span>
+          <h2 class="section-title" style="text-align:left; max-width:480px;">La blockchain comme<br/><em>notaire automatique</em></h2>
+          <p style="color:var(--text-muted); line-height:1.75; margin-bottom:32px;">CoopEnergie utilise la blockchain Celo — pensée pour l'Afrique, mobile-first, avec des frais quasi nuls. Chaque cotisation, chaque vote et chaque paiement sont enregistrés de façon immuable et vérifiable par tous.</p>
+          <div class="trust-guarantees">
+            <div class="guarantee">
+              <div class="guarantee-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+              <div>
+                <strong>Fonds sécurisés</strong>
+                <span>Personne ne peut accéder aux fonds seul. Libération conditionnée au vote et aux étapes validées.</span>
+              </div>
+            </div>
+            <div class="guarantee">
+              <div class="guarantee-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+              <div>
+                <strong>Traçabilité totale</strong>
+                <span>Historique complet et immuable de toutes les transactions et décisions.</span>
+              </div>
+            </div>
+            <div class="guarantee">
+              <div class="guarantee-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+              <div>
+                <strong>Compatible Mobile Money</strong>
+                <span>Intégration Notchpay pour MTN MoMo et Orange Money — les solutions que vous utilisez déjà.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="trust-visual">
+          <div class="chain-visual">
+            <div class="chain-block">
+              <div class="cb-icon">💰</div>
+              <div class="cb-label">Cotisation</div>
+            </div>
+            <div class="chain-link"></div>
+            <div class="chain-block">
+              <div class="cb-icon">🗳️</div>
+              <div class="cb-label">Vote</div>
+            </div>
+            <div class="chain-link"></div>
+            <div class="chain-block">
+              <div class="cb-icon">📋</div>
+              <div class="cb-label">Contrat</div>
+            </div>
+            <div class="chain-link"></div>
+            <div class="chain-block chain-block--active">
+              <div class="cb-icon">⚡</div>
+              <div class="cb-label">Paiement</div>
+            </div>
+          </div>
+          <p class="chain-caption">Chaque bloc est lié et immuable sur la blockchain Celo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">Questions fréquentes</h2>
+        <p class="section-desc">Vous avez une question ? Voici les réponses aux interrogations les plus courantes.</p>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Faut-il avoir des connaissances en blockchain pour utiliser CoopEnergie ?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Non, aucune connaissance technique n'est requise. La blockchain fonctionne en arrière-plan et vous n'avez qu'à utiliser l'interface simple de CoopEnergie. Vous payez via Mobile Money comme d'habitude — nous gérons la transparence et la sécurité pour vous.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Quels moyens de paiement sont acceptés ?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>CoopEnergie accepte les paiements via MTN Mobile Money et Orange Money. D'autres services financiers sont en cours d'intégration. Les transactions sont traitées par Notchpay, une solution camerounaise avec support local en français.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Comment sont sécurisés les fonds de ma coopérative ?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Les fonds sont détenus par un smart contract sur la blockchain Celo. Personne — ni un administrateur, ni un tiers — ne peut y accéder seul. Les fonds ne sont libérés que lorsque les conditions votées par les membres sont remplies : quorum atteint, étapes de livraison validées.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Une ONG ou une mairie peut-elle imposer ses conditions ?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Oui, dans certains cas une ONG peut poser des conditions telles que le choix de prestataires certifiés ou la validation d'étapes spécifiques. Cependant, la coopérative reste libre d'accepter ou de refuser le financement par un vote collectif. La décision finale appartient toujours aux membres.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Comment les prestataires sont-ils vérifiés ?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Chaque prestataire passe par une vérification incluant la validation de documents officiels, certifications et un historique de performance. Des badges de confiance sont attribués aux prestataires ayant fait leurs preuves. Cela garantit la qualité des installations solaires.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Comment obtenir le rapport financier de mon projet ?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Les rapports financiers sont générés automatiquement à partir des données de la blockchain : cotisations, votes, paiements et solde disponible. N'importe quel membre peut télécharger un rapport complet et vérifiable à tout moment, sans dépendre d'un administrateur.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>CoopEnergie est-il disponible en dehors du Cameroun ?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>CoopEnergie est actuellement conçu et optimisé pour le contexte camerounais. Grâce à l'infrastructure blockchain Celo et aux partenariats avec des passerelles de paiement couvrant plusieurs pays africains, une expansion régionale est prévue dans les prochaines étapes du projet.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section cta-final">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-bg-blob"></div>
+        <div class="cta-content">
+          <div class="cta-sun">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="14" fill="#F5A623" opacity="0.9"/>
+              <line x1="32" y1="6" x2="32" y2="14" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+              <line x1="32" y1="50" x2="32" y2="58" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+              <line x1="6" y1="32" x2="14" y2="32" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+              <line x1="50" y1="32" x2="58" y2="32" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+              <line x1="14.69" y1="14.69" x2="20.34" y2="20.34" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+              <line x1="43.66" y1="43.66" x2="49.31" y2="49.31" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+              <line x1="49.31" y1="14.69" x2="43.66" y2="20.34" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+              <line x1="20.34" y1="43.66" x2="14.69" y2="49.31" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h2>Prêt à électrifier<br/>votre communauté ?</h2>
+          <p>Rejoignez les premières coopératives sur CoopEnergie et lancez votre projet d'électrification solaire dès aujourd'hui.</p>
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-primary btn-lg btn-white">Créer ma coopérative</a>
+            <a href="#" class="btn btn-outline-white btn-lg">Contacter l'équipe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <span class="logo-icon">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="11" r="5" fill="#F5A623"/>
+              <line x1="16" y1="3" x2="16" y2="1" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+              <line x1="16" y1="21" x2="16" y2="19" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+              <line x1="8" y1="11" x2="6" y2="11" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+              <line x1="26" y1="11" x2="24" y2="11" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+              <rect x="6" y="21" width="20" height="9" rx="1.5" fill="#1A6B3C"/>
+              <line x1="6" y1="24.5" x2="26" y2="24.5" stroke="#4CAF7D" stroke-width="0.8"/>
+              <line x1="6" y1="27.5" x2="26" y2="27.5" stroke="#4CAF7D" stroke-width="0.8"/>
+              <line x1="12.67" y1="21" x2="12.67" y2="30" stroke="#4CAF7D" stroke-width="0.8"/>
+              <line x1="19.33" y1="21" x2="19.33" y2="30" stroke="#4CAF7D" stroke-width="0.8"/>
+            </svg>
+          </span>
+          <span class="logo-text">Coop<span>Energie</span></span>
+        </a>
+        <p>Financement collectif et transparent de l'énergie solaire pour les communautés africaines.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Plateforme</h4>
+          <a href="#">Fonctionnalités</a>
+          <a href="#">Comment ça marche</a>
+          <a href="#">Tarifs</a>
+        </div>
+        <div class="footer-col">
+          <h4>Acteurs</h4>
+          <a href="#">Coopératives</a>
+          <a href="#">ONG & Mairies</a>
+          <a href="#">Prestataires</a>
+        </div>
+        <div class="footer-col">
+          <h4>Ressources</h4>
+          <a href="#">Documentation</a>
+          <a href="#">FAQ</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2026 CoopEnergie. Tous droits réservés.</span>
+        <span>Construit sur <strong>Celo Blockchain</strong> · Paiements via <strong>Notchpay</strong></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
