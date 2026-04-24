@@ -504,7 +504,7 @@ img { display: block; max-width: 100%; }
 }
 .feat-card--accent::before { background: var(--solar); opacity: 1; }
 .feat-card--accent h3 { color: var(--white); }
-.feat-card--accent p { color: rgba(255,255,255,0.8); }
+.feat-card--accent p { color: rgba(255, 255, 255, 0.944); }
 .feat-card--accent .feat-icon { background: rgba(255,255,255,0.15); color: var(--white); }
 
 .feat-card--solar { border-color: var(--solar-light); }
